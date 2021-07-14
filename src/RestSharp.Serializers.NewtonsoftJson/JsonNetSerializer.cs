@@ -58,6 +58,10 @@ namespace RestSharp.Serializers.NewtonsoftJson
 
             return _serializer.Deserialize<T>(reader);
         }
+        
+        public T Deserialize<T>(String input){
+            
+        }
 
         public string[] SupportedContentTypes { get; } =
         {
